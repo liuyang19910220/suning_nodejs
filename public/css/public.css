@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td,figure{margin:0;padding:0;}
+body{font:12px  "宋体"; word-wrap:break-word;}  /*英文数字会换行*/
+a,u,s,del{color:#666;text-decoration:none;}   /*清除超链接,下划线，删除线等的原本样式*/
+fieldset ,a img,.bor0{border:0;}
+i,em,b{font-style:normal;font-weight:100;}
+li{list-style:none;}      /*清除li的列表符号*/
+img{vertical-align:middle;}
+table{border-collapse:collapse;}
+input,textarea{outline:none;}/*去除google的input虚框*/
+textarea{resize:none;}/*静止拖动*/
+.ind2{text-indent:2em;} 
+body{word-wrap:break-word;}    /*英文数字会换行*/
+.over{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;} /*单行文本自动换行加...*/
+
+
+.valign{text-align:center;}
+.valign:after{content:"";display:inline-block;vertical-align:middle;width:0px;height:100%;}
+.valign img{vertical-align:middle;}     
+/*三连招设置图片垂直居中显示，其中.valign是图片的父元素*/
+/*valign:after是伪元素写法，给父元素.valign添加一个子元素代替i*/
+/*伪元素是用css创建的元素*/
+
+
+/*万能清除法：对父元素设置伪元素。其中.clear是父元素*/
+.clear{zoom:1;}  /*ie兼容*/
+.clear:before{content:"";display:table;} /*清除margin-top向上传递*/
+.clear:after{content:"";display:block;clear:both;}  /*清除子元素浮动后，父元素没设高度情况下的高度塌陷*/

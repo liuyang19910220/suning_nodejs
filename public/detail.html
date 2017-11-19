@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>详情页</title>
+  <link href='css/public.css' rel='stylesheet' type='text/css'>
+  <link href='css/detail.css' rel='stylesheet' type='text/css'>
+  <script src='js/jquery-1.11.0.js' type='text/javascript' charset='utf-8'></script>
+  <script src='js/cookie.js' type='text/javascript' charset='utf-8'></script>
+  <script src='js/detail.js' type='text/javascript' charset='utf-8'></script>
+  <script src='js/distpicker.data.js'></script>
+  <script src='js/distpicker.js'></script>
+  <script src='js/main.js'></script>
+</head>
+
+<body>
+
+<section id='pubheader'></section>
+
+<script type='text/javascript'>
+  $('#pubheader').load('pubheader.html');
+</script>
+
+<!--------------------------------------location----------------->
+<div id='location' class='margin'>
+  <a href='index.html'>首页</a>
+  <span>&gt;</span>
+  <a href='list.html'>列表页</a>
+  <span>&gt;</span>
+  <a href='javascript:;'>详情页</a>
+
+</div>
+
+<!----------------------------------商品详情放大镜---------------------------->
+<div id='goods' class='margin'>
+  <div id='goods-l'>
+    <div id='zoomArea'>
+      <div id='middleArea'>
+        <!--<img src='01images/big1-1.jpg' />
+        <img src='01images/big1-2.jpg' />
+        <img src='01images/big1-3.jpg' />
+        <img src='01images/big1-4.jpg' />-->
+        <div id='zoom'></div>
+      </div>
+      <div id='bigArea'>
+        <!--<img src='01images/big1-1.jpg' />
+        <img src='01images/big1-2.jpg' />
+        <img src='01images/big1-3.jpg' />
+        <img src='01images/big1-4.jpg' />-->
+      </div>
+    </div>
+    <div id='small-pics'>
+      <!--<img src='01images/big1-1.jpg' />
+      <img src='01images/big1-2.jpg' />
+      <img src='01images/big1-3.jpg' />
+      <img src='01images/big1-4.jpg' />-->
+    </div>
+  </div>
+  <div id='goods-r'>
+    <div class='title'>
+      <h1 id='itemDisplayName'></h1>
+      <h2 id='promotionDesc'>【全新正品行货 全国联保】下单送钢化膜+手机壳+1年店铺延保！顺丰包邮！&nbsp;&nbsp;</h2>
+    </div>
+    <div class='price'>
+      <p>
+        <span>易购价</span>
+        <b></b>
+      </p>
+      <p>
+        <span>领券</span>
+        <i>18元</i><i>28元</i><i>38元</i><i>48元</i><i>58元</i>
+      </p>
+      <div>
+        <span class='left'>送货至</span>
+        <div class='right' data-toggle='distpicker'>
+          <select></select>
+          <select></select>
+          <select></select>
+        </div>
+      </div>
+    </div>
+    <div class='to-cart'>
+      <h4>
+        <span>数量</span>
+        <a class='reduce'>-</a>
+        <input type='text' value='1'/>
+        <a class='plus'>+</a>
+      </h4>
+      <h5>
+        <!--<a class='cart-btn' data-id=''+arr[i].productId+''>加入购物车</a>-->
+      </h5>
+    </div>
+    <div class='spacial-ser'>
+      <span>特色服务</span>
+      <i>退</i>
+      <a>7天无理由退货</a>
+      <i>存</i>
+      <a>商品保管说明</a>
+      <i>企</i>
+      <a>企业采购</a>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------浏览记录---------------------------->
+<div id='record' class='margin'>
+  <h3>浏览记录</h3>
+  <div class='box'>
+    <ul>
+      <!--<li>
+        <a href='#'>
+          <img src='01images/big1-1.jpg'>
+          <p class='des'>Apple iPhone 6 32GB 金色 移动联通电信4G手机</p>
+          <p class='price-tag'>¥2488.00</p>
+        </a>
+      </li>-->
+    </ul>
+  </div>
+</div>
+<!------------------------------------详情图---------------------------->
+<div id='detail-main' class='clear margin'>
+  <div class='main-l'>
+    <h3>看了最终买</h3>
+    <ul>
+      <!--ajax-->
+      <!--<li>
+        <img src='01images/big1-1.jpg' />
+        <p>iphone6S</p>
+        <span>￥2999</span>
+      </li>-->
+    </ul>
+  </div>
+  <div class='main-r'>
+    <ul class='nav clear'>
+      <li class='active'>商品详情</li>
+      <li>包装参数</li>
+      <li>评价详情</li>
+      <li>咨询帮助</li>
+      <li>售后保障</li>
+    </ul>
+    <div class='content'>
+      <ul>
+        <li><img src='images/detail1.jpg'/></li>
+        <li><img src='images/detail2.jpg'/></li>
+        <li><img src='images/detail3.jpg'/></li>
+        <li><img src='images/detail4.jpg'/></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<section id='footer'></section>
+<script type='text/javascript'>
+  $('#footer').load('pubfooter.html');
+</script>
+
+</body>
+
+</html>

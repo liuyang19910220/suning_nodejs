@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='UTF-8'>
+		<title>购物车</title>
+		<link href='css/public.css' rel='stylesheet' type='text/css'>
+		<link href='css/cart.css' rel='stylesheet' type='text/css'>
+		<script src='js/jquery-1.11.0.js' type='text/javascript' charset='utf-8'></script>
+		<script src='js/cookie.js' type='text/javascript' charset='utf-8'></script>
+		<script src='js/cart.js' type='text/javascript' charset='utf-8'></script>
+		<script src='js/template.js' type='text/javascript' charset='utf-8'></script>
+	</head>
+
+	<body>
+		<!--------------------------------------top----------------->
+		<div id='top'>
+			<div class='margin'>
+				<div class='left'>
+					<div class='left-nav'>
+						<a class='nav-a'>网站导航</a>
+						<div class='nav-box'>
+							<dl class='sn-site-list'><dt>特色购物</dt>
+								<dd>
+									<p>
+										<a name='public0_none_daohang_tese01' href='http://10035.suning.com/' target='_blank'>苏宁互联</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese02' href='http://sale.suning.com/syb/pcdr/index.html' target='_blank'>苏宁达人</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese03' href='http://vbuy.suning.com/vbuyCity.html' target='_blank'>苏宁V购</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese04' href='http://ka.suning.com/' target='_blank'>苏宁卡</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese05' href='http://g.suning.com/' target='_blank'>海外购</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese06' href='http://ju.suning.com/home.htm' target='_blank'>大聚惠<i class='hot'></i></a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese08' href='http://tv.suning.com/' target='_blank'>视频购物</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese09' href='http://sale.suning.com/images/advertise/mdr/oabangong526/index.html' target='_blank'>办公直通车</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese10' href='http://hx.suning.com/' target='_blank'>以旧换新</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese12' href='https://2.suning.com' target='_blank'>二手优品</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_tese13' href='http://quan.suning.com/lq_1.htm' target='_blank'>领券中心</a>
+									</p>
+									<p>
+										<a name='' href='https://www.hksuning.com' target='_blank'>香港苏宁</a>
+									</p>
+								</dd>
+							</dl>
+							<dl class='sn-site-list'><dt>主题频道</dt>
+								<dd>
+									<p>
+										<a name='public0_none_daohang_zhuti01' href='http://channel.suning.com/dianqicheng.html' target='_blank'>电器城</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti02' href='http://chaoshi.suning.com/' target='_blank'>苏宁超市</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti03' href='http://shouji.suning.com/' target='_blank'>手机</a>
+									</p>
+									<p>
+										<a name='' href='http://sports.suning.com' target='_blank'>运动馆</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti05' href='http://book.suning.com/' target='_blank'>图书</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti06' href='http://redbaby.suning.com/' target='_blank'>红孩子母婴</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti07' href='http://binggo.suning.com/' target='_blank'>美妆个护</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti08' href='http://pindao.suning.com/city/diannao.htm' target='_blank'>电脑</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti09' href='http://fashion.suning.com/' target='_blank'>服装城</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti10' href='http://smarthome.suning.com/' target='_blank'>智能生活</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti11' href='http://pindao.suning.com/city/jiazhuang.htm' target='_blank'>家装馆</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti12' href='http://car.suning.com/qichenew.html' target='_blank'>汽车用品</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti13' href='http://re.suning.com/' target='_blank'>苏宁热卖<i class='hot'></i></a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_zhuti14' href='http://rec.suning.com/show/rank.htm' target='_blank'>排行榜</a>
+									</p>
+								</dd>
+							</dl>
+							<dl class='sn-site-list'><dt>生活助手</dt>
+								<dd>
+									<p>
+										<a name='public0_none_daohang_shenghuo01' href='https://passport.suning.com/ids/trustLogin?sysCode=epp&amp;targetUrl=https://licai.suning.com/bof/bofIndex.htm' target='_blank'>零钱宝<i class='hot'></i></a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_shenghuo02' href='http://chong.suning.com/eppscrp/mobile/fill.htm' target='_blank'>手机充值</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_shenghuo03' href='http://hcp.suning.com/' target='_blank'>火车票</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_shenghuo04' href='http://sh.suning.com/life/at/memtrans!input.action' target='_blank'>转账还款</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_shenghuo05' href='https://pindao.suning.com/city/bangke.html' target='_blank'>约服务</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_shenghuo06' href='http://sh.suning.com/life/2-1.html' target='_blank'>水电煤</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_shenghuo07' href='http://baoxian.suning.com/ins/index.htm' target='_blank'>保险</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_shenghuo08' href='http://jipiao.suning.com/' target='_blank'>机票</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_shenghuo09' href='http://vbuy.suning.com/vbuyCity.html' target='_blank'>门店查询</a>
+									</p>
+								</dd>
+							</dl>
+							<dl class='sn-site-list'><dt>会员服务</dt>
+								<dd>
+									<p>
+										<a name='public0_none_daohang_huiyuan01' href='http://vip.suning.com' target='_blank'>会员联盟<i class='hot'></i></a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_huiyuan02' href='http://baoxian.suning.com/ins/jiaDian.htm' target='_blank'>延长保修</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_huiyuan03' href='http://snbook.suning.com/web/index.htm' target='_blank'>免费书城</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_huiyuan04' href='https://passport.suning.com/ids/trustLogin?sysCode=epp&amp;targetUrl=https://pay.suning.com/epp-epw/login/login.action' target='_blank'>易付宝</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_huiyuan05' href='https://passport.suning.com/ids/trustLogin?sysCode=epp&amp;targetUrl=https://licai.suning.com/bof/licaiIndex.htm' target='_blank'>苏宁理财</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_huiyuan06' href='http://jinrong.suning.com' target='_blank'>苏宁金融</a>
+									</p>
+								</dd>
+							</dl>
+							<dl class='sn-site-list rnb'><dt>更多热点</dt>
+								<dd>
+									<p>
+										<a name='public0_none_daohang_gengduo01' href='http://www.pptv.com/' target='_blank'>PPTV</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_gengduo02' href='http://sale.suning.com/syb/20120419xsjkhd/index.html' target='_blank'>客户端</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_gengduo03' href='http://sop.suning.com/' target='_blank'>商家入驻<i class='hot'></i></a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_gengduo04' href='http://sncs.suning.com/' target='_blank'>苏宁众包</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_gengduo05' href='http://union.suning.com/' target='_blank'>苏宁联盟</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_gengduo06' href='http://ued.suning.com/survey/' target='_blank'>用户体验</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_gengduo07' href='http://gongyi.suning.com' target='_blank'>公益频道</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_gengduo08' href='http://guang.suning.com/student/agent/join/first.htm' target='_blank'>校园先锋</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_gengduo09' href='http://jiameng.suning.com/home.action' target='_blank'>苏宁加盟</a>
+									</p>
+									<p>
+										<a name='public0_none_daohang_gengduo10' href='http://www.suningcloud.com/' target='_blank'>苏宁云</a>
+									</p>
+									<p>
+										<a name='public0_none_dbgjt_wzdh030514' href='http://fc.suning.com/' target='_blank'>苏宁足球</a>
+									</p>
+								</dd>
+							</dl>
+						</div>
+						<!--网站导航列表-->
+					</div>
+
+					<div class='left-partner'>
+						<a class='partner-a'>商家入驻</a>
+						<div class='partner-box'>
+							<a href='http://fuwu.suning.com/' rel='nofollow' target='_blank' name='public0_none_shangjia_fuwu'>服务市场</a>
+							<a href='http://qyjr.suning.com/' rel='nofollow' target='_blank' name='public0_none_shangjia_jinrong'>金融中心</a>
+							<a href='http://sopbbs.suning.com/forum.php' rel='nofollow' target='_blank' name='public0_none_shangjia_luntan'>商家论坛</a>
+							<a href='http://stc.suning.com/' rel='nofollow' target='_blank' name='public0_none_shangjia_peixun'>培训中心</a>
+							<a href='http://ap.suning.com/aps-sale-web/auth/advertise.htm' rel='nofollow' target='_blank' name='public0_none_shangjia_zengzhi'>增值服务</a>
+						</div>
+					</div>
+				</div>
+				<div class='right'>
+					<a class='aa' href='login.html'>请登录</a>
+					<a class='ab' href='register.html'>注册有礼</a>
+					<a class='aa' href='#'>我的订单</a>
+					<a class='aa' href='#'>我的易购</a>
+					<a class='ab' href='cart.html'><i class="iconfont">&#xe63f;</i>购物车<b class='cart'>0</b></a>
+					<a class='aa' href='#'>企业采购</a>
+					<a class='aa' href='#'>手机苏宁</a>
+				</div>
+			</div>
+		</div>
+
+		<!--------------------------------------header----------------->
+		<div id='header'>
+			<div class='margin'>
+				<div class='header-l'>
+					<a href='//www.suning.com/' class='logo-set' title='苏宁易购'>
+						<img alt='苏宁易购' src='//image2.suning.cn/uimg/cms/img/149260278208811058.png'>
+					</a>
+				</div>
+
+				<div class='header-m'>
+					<div class='search-t'>
+						<i class='iconfont'>&#xe620;</i>
+						<input type='text' id='txt' value='' />
+						<input type='button' id='btn' value='搜索' />
+					</div>
+					<div class='search-b'>
+						<a name='public0_RSC_洗衣机_0-0' target='_blank' href='http://search.suning.com/%E6%B4%97%E8%A1%A3%E6%9C%BA/'>洗衣机</a>
+						<a name='public0_RSC_冰箱爆款必抢_1-0' target='_blank' href='http://search.suning.com/%E5%86%B0%E7%AE%B1%E7%88%86%E6%AC%BE%E5%BF%85%E6%8A%A2/'>冰箱爆款必抢</a>
+						<a name='public0_RSC_4K超高清_2-0' target='_blank' href='http://search.suning.com/4K%E8%B6%85%E9%AB%98%E6%B8%85/'>4K超高清</a>
+						<a name='public0_RSC_海尔最高减1000_3-0' target='_blank' href='http://search.suning.com/%E6%B5%B7%E5%B0%94%E6%9C%80%E9%AB%98%E5%87%8F1000/'>海尔最高减1000</a>
+						<a name='public0_RSC_空调_4-0' target='_blank' href='http://search.suning.com/%E7%A9%BA%E8%B0%83/'>空调</a>
+						<a name='public0_RSC_电饭煲_5-0' target='_blank' href='http://search.suning.com/%E7%94%B5%E9%A5%AD%E7%85%B2/'>电饭煲</a>
+						<a name='public0_RSC_小米手机_6-0' target='_blank' href='http://search.suning.com/%E5%B0%8F%E7%B1%B3%E6%89%8B%E6%9C%BA/'>小米手机</a>
+						<a name='public0_RSC_热水器_7-0' target='_blank' href='http://search.suning.com/%E7%83%AD%E6%B0%B4%E5%99%A8/'>热水器</a>
+						<a name='public0_RSC_尼康单反_8-0' target='_blank' href='http://search.suning.com/%E5%B0%BC%E5%BA%B7%E5%8D%95%E5%8F%8D/'>尼康单反</a>
+						<a name='public0_RSC_洗发水_9-0' target='_blank' href='http://search.suning.com/%E6%B4%97%E5%8F%91%E6%B0%B4/'>洗发水</a>
+						<a name='public0_RSC_ipad_10-0' target='_blank' href='http://search.suning.com/ipad/'>ipad</a>
+					</div>
+				</div>
+				<div class='header-r'>
+					<img src='//image2.suning.cn/uimg/cms/img/149391734040363425.png' alt='苏宁易购APP'>
+				</div>
+			</div>
+		</div>
+
+		<!--------------------------------------location----------------->
+		<div id='location' class='margin'>
+			<a href='index.html'>首页</a>
+			<span>&gt;</span>
+			<a href='list.html'>列表页</a>
+			<span>&gt;</span>
+			<a href='javascript:;'>购物车</a>
+		</div>
+		<!--------------------------------------购物车列表----------------->
+		<div id='main' class='margin'>
+			<div class='cart-header'>
+				<ul class='clear'>
+					<li>
+						<label class='selectAll'></label>全选
+					</li>
+					<li>商品信息</li>
+					<li>单价</li>
+					<li>数量</li>
+					<li>小计(元)</li>
+					<li>删除</li>
+				</ul>
+			</div>
+			<div class='cart-content'>
+				<ul>
+					<!--老师京东案例-->
+					<!--<script id="nav" type="text/html">
+					{{each navList as value}}
+					<li>
+						{{each value as item i}}
+						<a href="{{item.link}}">{{item.title}}</a>
+						{{if i != value.length-1}}
+						<span class="dl">/</span>
+						{{/if}}
+						
+						{{/each}}
+					</li>	
+					
+					{{/each}}
+					</script>-->
+					<!--以下模板用于模板引擎-->
+					<!--<script id="cartli" type="text/html">
+						{{each cartList as value}}
+						<li>
+							{{each value as item i}}
+							<label class='selectItem'></label>
+							<img src='{{}}' />
+							<p class='title'>记得记得空间的蒋介石的快捷地往前奇偶ID温泉酒店万请教</p>
+							<span class='price'>￥2999</span>
+							<h4 class="num">
+								<a class='reduce'>-</a>
+								<input type='text' value='2' />
+								<a class='plus'>+</a>
+							</h4>
+							<span class='total'>￥2999*2</span>
+							<a class='delete'>删除</a>
+							{{/each}}
+						</li>
+						{{/each}}
+					</script>-->
+					<!--以下模板用于字符串拼接-->
+					<!--<li>
+							<label class='selectItem'></label>
+							<img src='01images/big1-1.jpg' />
+							<p class='title'>泉酒店万请教</p>
+							<span class='price'>￥2999</span>
+							<h4 class="num">
+								<a class='reduce'>-</a>
+								<input type='text' value='2' />
+								<a class='plus'>+</a>
+							</h4>
+							<span class='total'>￥2999*2</span>
+							<a class='delete'>删除</a>
+						</li>-->
+				</ul>
+			</div>
+			<div class='cart-footer'>
+				<ul class='clear'>
+					<li>
+						<label class='selectAll'></label>全选
+					</li>
+					<li class="delete">删除选中的商品</li>
+					<li>已选商品数量<i class='numAll'>0</i></li>
+					<li>总价格
+						<span class="totalAll">0</span>
+					</li>
+					<li class="cash">去结算</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--载入尾部---样式自定义------>
+		<section id='footer'></section>
+		<script type='text/javascript'>
+			$('#footer').load('pubfooter.html');
+		</script>
+
+	</body>
+
+</html>

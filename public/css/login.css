@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*sass--css可以转译出来*/
+.margin {
+  width: 970px;
+  margin: 0 auto; }
+
+.header {
+  height: 100px;
+  margin: 0 auto; }
+  .header .logo {
+    display: block;
+    width: 189px;
+    height: 100%; }
+    .header .logo img {
+      padding-top: 18px; }
+
+#main {
+  height: 570px;
+  background: url(../images/login-banner.jpg) no-repeat -550px center;
+  position: relative; }
+  #main .loginform {
+    width: 360px;
+    background: #fff;
+    position: absolute;
+    right: 235px;
+    top: 50px;
+    color: #333; }
+    #main .loginform .tab {
+      border-bottom: 1px solid #eee;
+      height: 50px;
+      width: 100%; }
+      #main .loginform .tab a {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 100%;
+        font: 16px/50px "";
+        text-align: center; }
+      #main .loginform .tab .on {
+        color: #f60; }
+    #main .loginform .pc-login {
+      box-sizing: border-box;
+      width: 360px;
+      height: 233px;
+      padding: 0 24px; }
+      #main .loginform .pc-login .tips {
+        width: 100%;
+        height: 24px;
+        background: pink;
+        border: 1px solid red;
+        margin: 5px 0; }
+      #main .loginform .pc-login .usernamebox,
+      #main .loginform .pc-login .passwordbox {
+        box-sizing: border-box;
+        width: 312px;
+        height: 38px;
+        border: 1px solid #eee;
+        margin-bottom: 20px; }
+        #main .loginform .pc-login .usernamebox i.icon,
+        #main .loginform .pc-login .passwordbox i.icon {
+          float: left;
+          width: 36px;
+          height: 36px;
+          float: left;
+          background: url(../images/sprite.png) no-repeat -126px -67px; }
+        #main .loginform .pc-login .usernamebox input,
+        #main .loginform .pc-login .passwordbox input {
+          float: left;
+          width: 242px;
+          height: 36px;
+          border: 0; }
+        #main .loginform .pc-login .usernamebox i.clear,
+        #main .loginform .pc-login .passwordbox i.clear {
+          float: left;
+          width: 32px;
+          height: 36px;
+          float: right;
+          background: url(../images/sprite.png) no-repeat -82px -108px; }
+      #main .loginform .pc-login .help {
+        width: 312px;
+        height: 35px;
+        padding-top: 10px;
+        margin-top: 20px;
+        line-height: 35px; }
+        #main .loginform .pc-login .help a:hover {
+          color: #f60; }
+        #main .loginform .pc-login .help .switch {
+          display: block;
+          width: 105px;
+          height: 35px;
+          float: left; }
+          #main .loginform .pc-login .help .switch i {
+            display: inline-block;
+            vertical-align: middle;
+            padding-right: 5px;
+            width: 14px;
+            height: 14px;
+            background: url(../images/sprite.png) no-repeat 0 -150px; }
+        #main .loginform .pc-login .help .forget-psd {
+          display: block;
+          width: 60px;
+          height: 35px;
+          float: right; }
+    #main .loginform #submit {
+      display: block;
+      height: 40px;
+      font: 20px/40px "";
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #f60; }
+  #main .free-reg {
+    height: 18px;
+    margin: 12px 0 35px;
+    text-align: center; }
+    #main .free-reg a {
+      font: 14px/18px ""; }
+    #main .free-reg a:hover {
+      color: #f60;
+      text-decoration: underline; }
+  #main .bind-login {
+    position: relative;
+    width: 310px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    padding: 19px 0 17px; }
+    #main .bind-login span {
+      background: #fff;
+      color: #999;
+      position: absolute;
+      left: 155px;
+      top: -25%;
+      padding: 5px;
+      margin-left: -50px; }
+    #main .bind-login .collection {
+      height: 16px;
+      line-height: 16px; }
+      #main .bind-login .collection a {
+        float: left;
+        padding: 0 7px;
+        border-right: 1px solid #dedcd5;
+        line-height: 16px; }
+        #main .bind-login .collection a i {
+          vertical-align: middle;
+          padding-right: 5px;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url(../images/sprite.png) no-repeat; }
+        #main .bind-login .collection a i.i1 {
+          background-position: -90px -27px; }
+        #main .bind-login .collection a i.i2 {
+          background-position: -160px -108px; }
+        #main .bind-login .collection a i.i3 {
+          background-position: -118px -107px; }
+      #main .bind-login .collection a:hover {
+        text-decoration: underline;
+        color: #f60; }
+      #main .bind-login .collection a.last {
+        border: 0; }
+
+.footer {
+  color: #666666;
+  font: 12px/25px "";
+  padding-top: 15px;
+  text-align: center; }
+  .footer .ng-url-list, .footer .ng-copyright, .footer .ng-authentication {
+    margin: 0 auto;
+    width: 990px;
+    height: 25px; }
+  .footer .ng-authentication {
+    margin-top: 10px;
+    margin-bottom: 25px; }
+  .footer a:hover {
+    text-decoration: underline;
+    color: #f60; }
+  .footer span {
+    padding: 0 5px; }
+
+/*# sourceMappingURL=login.css.map */
